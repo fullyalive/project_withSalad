@@ -1,0 +1,129 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 제휴채널 일원화 명시 */
+.rule__container {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin-top: 56px;
+
+  background-color: #09c584;
+  color: white;
+  text-align: center;
+}
+
+.rule-title {
+  z-index: 3;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.rule-content {
+  z-index: 3;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.rule-img {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+/* 제휴제안 과정 */
+.proposal__process-container {
+  width: 70%;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.proposal__process {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #09c584;
+  border-radius: 50%;
+  margin: 15px;
+  margin-bottom: 100px;
+}
+
+.proposal__process-title {
+  width: 150px;
+  border-right: 1px solid #888888;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.proposal__process-content {
+  width: 70%;
+  padding: 0px 20px 20px 20px;
+}
+
+.text {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+/* 제휴제안 카테고리 */
+
+.proposal__category-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.proposal__category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+
+.proposal__icon {
+}
+
+.proposal__content {
+  text-align: center;
+}
+
+.proposal__submit {
+  padding: 8px;
+  border: 1px solid #888888;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: #888888;
+}
+
+.proposal__submit:hover {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #09c584;
+  color: #09c584;
+}
