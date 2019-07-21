@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>제휴 안내</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__column">
+        <a class="logo" href="https://banksalad.com">
+          <img class="logo-icon" src="img/logo.png" alt="뱅크샐러드" />
+        </a>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="../index.html">prototype</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__column">
+        <a href="user/mypage.html">제안현황조회</a>
+      </div>
+    </header>
+    <main>
+      <!-- 제휴채널 일원화 명시 -->
+      <div class="rule__container">
+        <p class="rule-title">제휴 안내</p>
+        <p class="rule-content">
+          제휴 및 제안은 본 채널을 통해 접수된 건만 정식으로 검토하며<br />제안
+          내용 및 관련 자료는 제휴 검토 목적으로만 이용됩니다.
+        </p>
+        <img src="img/rule-img.png" alt="아보카도" class="rule-img" />
+      </div>
+      <!-- 제휴제안 큰 카테고리 -->
+      <div class="category__title-container">
+        <div
+          class="category__title title_selected"
+          onclick="openContent(event, 'Title1')"
+        >
+          사업제휴
+        </div>
+        <div class="category__title" onclick="openContent(event, 'Title2')">
+          마케팅제휴
+        </div>
+        <div class="category__title" onclick="openContent(event, 'Title3')">
+          기타 제안
+        </div>
+      </div>
+      <div class="category__tabs">
+        <div id="Title1" class="tabcontent content_selected">
+          <div class="cooperation__category-container">
+            <a href="proposal1.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/contract.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  뱅크샐러드와 함께할 새로운 사업 제안을 기다립니다.
+                </p>
+              </div>
+            </a>
+            <a href="proposal2.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/smartphone.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  DAU 120만 뱅크샐러드 앱 내 프로모션 및 다양한 마케팅 제휴를
+                  함께 진행할 수 있습니다.
+                </p>
+              </div>
+            </a>
+            <a href="proposal3.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/tv.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  뱅크샐러드를 더욱 빛나게 해줄 마케팅 제안을 기다립니다.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="Title2" class="tabcontent">
+          <div class="cooperation__category-container">
+            <a href="proposal1.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/contract.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  뱅크샐러드와 함께할 새로운 사업 제안을 기다립니다.
+                </p>
+              </div>
+            </a>
+            <a href="proposal2.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/smartphone.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  DAU 120만 뱅크샐러드 앱 내 프로모션 및 다양한 마케팅 제휴를
+                  함께 진행할 수 있습니다.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="Title3" class="tabcontent">
+          <div class="cooperation__category-container">
+            <a href="proposal3.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/tv.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  뱅크샐러드를 더욱 빛나게 해줄 마케팅 제안을 기다립니다.
+                </p>
+              </div>
+            </a>
+            <a href="proposal4.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/microphone.png" alt="PR" />
+                </div>
+                <p class="cooperation__content">
+                  언론매체 및 대외행사 섭외를 제안할 수 있습니다.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script>
+      function showMenu() {
+        const btn = document.getElementById("mobile-menu");
+        if (btn.style.display === "block") {
+          btn.style.display = "none";
+        } else {
+          btn.style.display = "block";
+        }
+      }
+
+      function openContent(evt, nthContent) {
+        let i;
+        let tabcontent;
+        let tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("category__title");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            "title_selected",
+            ""
+          );
+        }
+
+        document.getElementById(nthContent).style.display = "block";
+        evt.currentTarget.className += " title_selected";
+      }
+    </script>
+  </body>
+</html>

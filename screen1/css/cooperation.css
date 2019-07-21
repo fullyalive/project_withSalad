@@ -1,0 +1,76 @@
+
+/* 제휴 카테고리 상단 대분류 탭*/
+.category__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category__title {
+  padding: 10px;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title_selected {
+  color: inherit;
+  padding-bottom: 7px;
+  border-bottom: 3px solid #09c584;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.content_selected {
+  display: block;
+}
+
+/* 중분류 탭*/
+
+.cooperation__category-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.cooperation__category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cooperation__icon {
+  padding-top: 20px;
+}
+
+.cooperation__content {
+  text-align: center;
+}
+
+.cooperation__submit {
+  padding: 8px;
+  border: 1px solid #888888;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: #888888;
+}
+
+.cooperation__submit:hover {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #09c584;
+  color: #09c584;
+}
