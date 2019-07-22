@@ -17,6 +17,12 @@
   margin-bottom: 15px;
 }
 
+.proposal__category-des {
+  width: 90%;
+  height: 100px;
+  padding: 5%;
+  background-color: #efefef;
+}
 .proposal__submit {
   background-color: #09c584;
   padding: 15px;
