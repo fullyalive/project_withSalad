@@ -85,6 +85,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: center;
+  box-sizing: border-box;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -349,7 +350,9 @@ input[type="radio"] {
   *height: 13px; /* 3 */
   *width: 13px; /* 3 */
 }
-
+input[type="text"] {
+  box-sizing: border-box;
+}
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
@@ -408,6 +411,7 @@ input,
 select,
 textarea {
   color: #0b0c0c;
+  box-sizing: border-box;
 }
 
 ::-moz-selection {
@@ -431,6 +435,7 @@ fieldset {
 }
 
 textarea {
+  box-sizing: border-box;
   resize: vertical;
 }
 
