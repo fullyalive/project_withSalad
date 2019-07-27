@@ -212,9 +212,10 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-
+a,
 a:active,
 a:hover {
+  cursor: pointer;
   outline: 0;
 }
 

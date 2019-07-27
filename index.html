@@ -13,13 +13,14 @@
         <a class="logo" href="https://banksalad.com">
           <img class="logo-icon" src="img/logo.png" alt="뱅크샐러드" />
         </a>
-      </div>
-      <div class="header__column">
         <!-- <ul class="menu">
           <li class="menu__item">
-            <a href="screen1/home.html">full</a>
+            <a href="../index.html">prototype</a>
           </li>
         </ul> -->
+      </div>
+      <div class="header__column">
+        <a href="user/mypage.html">제안현황조회</a>
       </div>
     </header>
     <main>
@@ -32,107 +33,129 @@
         </p>
         <img src="img/rule-img.png" alt="아보카도" class="rule-img" />
       </div>
-      <!-- 제휴제안 과정 -->
-      <div class="proposal__process-container">
-        <div class="proposal__process">
-          <div class="circle">1. 등록/접수</div>
-          <div class="circle">2. 제안검토</div>
-          <div class="circle">3. 회신</div>
+      <!-- 제휴제안 큰 카테고리 -->
+      <div class="category__title-container">
+        <div
+          class="category__title title_selected"
+          onclick="openContent(event, 'Title1')"
+        >
+          사업제휴
         </div>
-        <div class="proposal__process">
-          <div class="proposal__process-title">등록/접수</div>
-          <div class="proposal__process-content">
-            <p class="text">
-              담당자와의 면담을 전제로 한 제휴제안은 지양해 주시고, 특허 및
-              디자인, 저작권 등 <br />각 지식재산권의 공개 내지 공유가 필요한
-              제휴 요청의 경우 반드시 권리 등록을 완료하시고 당사로 제휴제안
-              요청을 하여 주시기 바랍니다.
-            </p>
-            <p class="text">
-              또한 제휴제안서에는 제안자의 영업비밀이나 기밀사항에 해당하지 않는
-              '공개가 가능한 내용'만 서술하여 주시기 바랍니다.
-            </p>
-            <p class="text">
-              제안 내용 및 관련자료는 제휴 검토 목적으로만 이용됩니다.
-            </p>
-          </div>
-        </div>
-        <div class="proposal__process">
-          <div class="proposal__process-title">제안검토</div>
-          <div class="proposal__process-content">
-            <p class="text">
-              30일 이내에 제안자가 담당자의 자료요청 또는 재문의에 회신을 하지
-              않는 경우 해당 제휴제안은 종료 처리됩니다.
-            </p>
-            <p class="text">
-              담당자가 제휴제안 내용을 검토하는 과정에서 제안자에게 추가 자료를
-              요청하거나 재문의할 수 있습니다.
-            </p>
-          </div>
-        </div>
-        <div class="proposal__process">
-          <div class="proposal__process-title">회신</div>
-          <div class="proposal__process-content">
-            <p class="text">
-              제휴제안 내용의 검토 결과는 문의주신 메일 주소로 발송됩니다.
-            </p>
-            <p class="text">제휴 진행이 결정되면, 해당 제안 건을 종료합니다.</p>
-            <p class="text">
-              제휴제안이 받아들여지지 않은 경우 제휴제안 내용 및 관련 자료는
-              즉시 파기됩니다.
-            </p>
-          </div>
+        <div class="category__title" onclick="openContent(event, 'Title2')">
+          마케팅제휴
         </div>
       </div>
-      <!-- 제휴제안 카테고리 -->
-      <div class="proposal__category-container">
-        <div class="proposal__category">
-          <div class="proposal__icon">
-            <img src="img/contract.png" alt="" />
-          </div>
-          <p class="proposal__content">
+      <div class="category__tabs">
+        <div id="Title1" class="tabcontent content_selected">
+          <div class="cooperation__category-description">
             뱅크샐러드와 함께할 새로운 사업 제안을 기다립니다.
-          </p>
-          <a class="proposal__submit" href="mailto:bd@sample.com">
-            bd@sample.com
-          </a>
-        </div>
-        <div class="proposal__category">
-          <div class="proposal__icon">
-            <img src="img/smartphone.png" alt="" />
           </div>
-          <p class="proposal__content">
-            DAU 120만 뱅크샐러드 앱 내 프로모션 및 다양한 마케팅 제휴를 함께
-            진행할 수 있습니다.
-          </p>
-          <a class="proposal__submit" href="mailto:marketing@sample.com">
-            marketing@sample.com
-          </a>
-        </div>
-        <div class="proposal__category">
-          <div class="proposal__icon">
-            <img src="img/promotion.png" alt="" />
+          <div class="cooperation__category-container">
+            <a class="cooperation__link" href="proposal/business_1.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/credit-card.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  소비자들의 신용카드 사용을 혁신적으로 개선할 제휴 사업을
+                  기다립니다.
+                </p>
+              </div>
+            </a>
+            <a class="cooperation__link" href="proposal/business_2.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/home.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  부동산 P2P 상품 제휴에 대한 소중한 제안을 기다리고 있습니다.
+                </p>
+              </div>
+            </a>
+            <a class="cooperation__link" href="proposal/business_3.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/plane.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  스위치 보험 상품 제휴를 진행할 수 있습니다.
+                </p>
+              </div>
+            </a>
+            <a class="cooperation__link" href="proposal/business_4.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/megaphone1.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  DAU 120만 뱅크샐러드 앱 내 프로모션 및 다양한 마케팅 제휴를
+                  함께 진행할 수 있습니다.
+                </p>
+              </div>
+            </a>
           </div>
-          <p class="proposal__content">
+        </div>
+        <div id="Title2" class="tabcontent">
+          <div class="cooperation__category-description">
             뱅크샐러드를 더욱 빛나게 해줄 마케팅 제안을 기다립니다.
-          </p>
-          <a class="proposal__submit" href="mailto:adl@sample.com">
-            adl@sample.com
-          </a>
-        </div>
-        <div class="proposal__category">
-          <div class="proposal__icon">
-            <img src="img/microphone.png" alt="PR" />
           </div>
-          <p class="proposal__content">
-            언론매체 및 대외행사 섭외를 제안할 수 있습니다.
-          </p>
-          <a class="proposal__submit" href="mailto:pr@sample.com">
-            pr@sample.com
-          </a>
+          <div class="cooperation__category-container">
+            <a href="proposal/marketing_1.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/megaphone2.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  뱅크샐러드의 브랜드와 미디어 노출, 마케팅에 대해 새로운 제안을
+                  하실 수 있습니다.
+                </p>
+              </div>
+            </a>
+            <a href="proposal/marketing_2.html">
+              <div class="cooperation__category">
+                <div class="cooperation__icon">
+                  <img src="img/radio.png" alt="" />
+                </div>
+                <p class="cooperation__content">
+                  언론매체 및 대외행사 섭외를 제안할 수 있습니다.
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <script>
+      function showMenu() {
+        const btn = document.getElementById("mobile-menu");
+        if (btn.style.display === "block") {
+          btn.style.display = "none";
+        } else {
+          btn.style.display = "block";
+        }
+      }
+
+      function openContent(evt, nthContent) {
+        let i;
+        let tabcontent;
+        let tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("category__title");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            "title_selected",
+            ""
+          );
+        }
+
+        document.getElementById(nthContent).style.display = "block";
+        evt.currentTarget.className += " title_selected";
+      }
+    </script>
   </body>
 </html>
