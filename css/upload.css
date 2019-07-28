@@ -148,5 +148,61 @@ input[type="radio"]:last-child {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
+  margin-bottom: 15px;
+}
+
+.agreement-box input[type="checkbox"] {
+  display: none;
+  margin-right: 100px;
+}
+
+.agreement-box label {
+  position: relative;
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+/* Base styles for spans */
+.agreement-box span::before,
+.agreement-box span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Check-boxes */
+.agreement-box span.checkbox::before {
+  width: 27px;
+  height: 27px;
+  border: 3px solid #09c584;
+  right: -50px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.agreement-box span.checkbox:hover::before {
+  border: 3px solid #09c584;
+}
+.agreement-box span.checkbox::after {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  right: -45px;
+  top: 2px;
+  color: transparent;
+  transition: color 0.2s;
+}
+input[type="checkbox"]:checked + label span.checkbox::after {
+  color: #09c584;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #09c584;
+  color: white;
+  font-weight: bold;
 }
