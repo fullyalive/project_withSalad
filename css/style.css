@@ -1,7 +1,9 @@
 @import "reset.css";
 @import "header.css";
-@import "main.css";
+@import "globals.css";
 @import "rule.css";
 @import "cooperation.css";
 @import "proposal.css";
 @import "upload.css";
+@import "mypage.css";
+@import "form.css"

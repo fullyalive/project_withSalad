@@ -19,14 +19,14 @@
         </a>
       </div>
       <div class="header__column">
-        <a href="user/mypage.html">제안현황조회</a>
+        <a href="../user/mypage.html">제안현황조회</a>
       </div>
     </header>
     <main>
-      <div class="upload__container">
-        <div class="upload__box">
-          <h1 class="upload__introduction">제휴제안 등록하기</h1>
-          <form action="" method="post">
+      <form class="upload__form" action="" method="post">
+        <div class="upload__container">
+          <div class="upload__box">
+            <h1 class="upload__introduction">제휴제안 등록하기</h1>
             <div class="form-box">
               <p class="text-title">제안제목</p>
               <input
@@ -55,11 +55,9 @@
               <input type="file" id="file" />
               <label for="file">파일 선택</label>
             </div>
-          </form>
-        </div>
-        <div class="upload__box">
-          <h1 class="upload__introduction">제휴제안 업체정보</h1>
-          <form action="" method="post">
+          </div>
+          <div class="upload__box">
+            <h1 class="upload__introduction">제휴제안 업체정보</h1>
             <div class="form-list">
               <p class="text-title">업체구분</p>
               <div class="proposer__type">
@@ -121,81 +119,82 @@
               <input type="file" id="file" />
               <label for="file">파일 선택</label>
             </div>
-          </form>
-        </div>
-        <div class="upload__box">
-          <h1 class="upload__introduction">개인정보 수집 및 이용 동의</h1>
-          <p class="notification">
-            (주)레이니스트는 아래의 목적으로 개인정보를 수집 및 이용하며<br />
-            회원의 개인정보를 안전하게 취급하는데 최선을 다하겠습니다.
-          </p>
-          <div class="privacy-policy">
-            <p>
-              1. 목적 : 제휴 제안에 따른 연락처 정보 확인 <br />2. 항목 :
-              회사(기관)명, 제안자명, 전화번호, 메일주소 <br />3. 보유기간 :
-              제휴 제안 사항 검토서비스를 위해 검토 완료 후 3개월 간 보관하며,
-              이후 해당 정보를 지체업이 파기합니다. <br /><br />
-              위 정보 수집에 대한 동의를 거부할 권리가 있으며, 동의 거부 시에는
-              제휴제안 접수가 제한될 수 있습니다.
-              <br />
-              더 자세한 내용에 대해서는 [레이니스트 개인정보처리방침]을
-              참고하시기 바랍니다.
+          </div>
+          <div class="upload__box">
+            <h1 class="upload__introduction">개인정보 수집 및 이용 동의</h1>
+            <p class="notification">
+              (주)레이니스트는 아래의 목적으로 개인정보를 수집 및 이용하며<br />
+              회원의 개인정보를 안전하게 취급하는데 최선을 다하겠습니다.
             </p>
+            <div class="privacy-policy">
+              <p>
+                1. 목적 : 제휴 제안에 따른 연락처 정보 확인 <br />2. 항목 :
+                회사(기관)명, 제안자명, 전화번호, 메일주소 <br />3. 보유기간 :
+                제휴 제안 사항 검토서비스를 위해 검토 완료 후 3개월 간 보관하며,
+                이후 해당 정보를 지체업이 파기합니다. <br /><br />
+                위 정보 수집에 대한 동의를 거부할 권리가 있으며, 동의 거부
+                시에는 제휴제안 접수가 제한될 수 있습니다.
+                <br />
+                더 자세한 내용에 대해서는 [레이니스트 개인정보처리방침]을
+                참고하시기 바랍니다.
+              </p>
+            </div>
+            <div class="agreement-box">
+              <input id="checkbox-1" type="checkbox" name="agreeement" />
+              <label for="checkbox-1"
+                ><span class="checkbox"
+                  >개인정보 수집 및 이용에 동의합니다.</span
+                ></label
+              >
+            </div>
           </div>
-          <div class="agreement-box">
-            <input id="checkbox-1" type="checkbox" name="agreeement" />
-            <label for="checkbox-1"
-              ><span class="checkbox"
-                >개인정보 수집 및 이용에 동의합니다.</span
-              ></label
-            >
+          <div class="upload__box">
+            <h1 class="upload__introduction">유의사항</h1>
+            <div class="privacy-policy">
+              <p>
+                레이니스트는 제안 사항에 관한 검토 진행 상황이나 결과에 대해
+                별도의 회신을 드리지 않습니다. 제안자가 자신이 제안한 사항의
+                폐기를 원하는 경우, 제안자는 이를 레이니스트에 요청할 수 있으며
+                레이니스트는 요청 접수 후 즉시 폐기합니다. <br /><br />
+                레이니스트는 제안 사항에 대해 별도의 비밀유지협약(NDA)을
+                체결하지 않으며, 제안자의 영업 기밀에 대한 보안 의무를 지지
+                않습니다. 따라서 제안하는 내용에 제안자의 영업 활동과 관련된
+                기밀 정보가 포함되지 않도록 주의해 주시기 바랍니다.<br /><br />
+                레이니스트는 제안 사항을 성실히 검토하여 사업성이 있다고
+                판단하는 경우, 제안자와 협의를 통해 제휴 계약 체결 등 별도의
+                사업 절차를 진행하게 됩니다. 다만, 제안자가 제안한 내용은 이미
+                레이니스트가 내부적으로 진행 중인 사업과 동일 또는 유사할 수
+                있으며, 제 3자로부터 먼저 제안 받은 내용일 수 있습니다. 따라서
+                레이니스트의 제안 사항에 대한 검토 진행이 제안자와의 제휴 사업
+                진행을 약속 드리는 것은 아니며, 제안 내용의 신규성 혹은
+                독창성이나 제안 내용에 대한 제안자의 우선권을 인정하는 것은
+                아님을 말씀 드립니다.<br /><br />
+                레이니스트와의 사업 제휴와 무관하거나 담당자와의 면담 또는 사업
+                진행을 전제로 한 제안일 경우 접수가 반려될 수 있음을 양해
+                바랍니다.
+              </p>
+            </div>
+            <div class="agreement-box">
+              <input id="checkbox-2" type="checkbox" name="agreeement" />
+              <label for="checkbox-2"
+                ><span class="checkbox"
+                  >상기 유의사항을 확인하였으며, 이에 동의합니다.</span
+                ></label
+              >
+            </div>
+            <div class="agreement-box">
+              <input id="checkbox-3" type="checkbox" name="agreeement" />
+              <label for="checkbox-3"
+                ><span class="checkbox"
+                  >등록하는 제안 내용에 제안자의 영업 기밀과 관련된 정보가
+                  포함되지 않았음을 확인합니다.</span
+                ></label
+              >
+            </div>
           </div>
+          <input type="submit" , value="제안등록하기" />
         </div>
-        <div class="upload__box">
-          <h1 class="upload__introduction">유의사항</h1>
-          <div class="privacy-policy">
-            <p>
-              레이니스트는 제안 사항에 관한 검토 진행 상황이나 결과에 대해
-              별도의 회신을 드리지 않습니다. 제안자가 자신이 제안한 사항의
-              폐기를 원하는 경우, 제안자는 이를 레이니스트에 요청할 수 있으며
-              레이니스트는 요청 접수 후 즉시 폐기합니다. <br /><br />
-              레이니스트는 제안 사항에 대해 별도의 비밀유지협약(NDA)을 체결하지
-              않으며, 제안자의 영업 기밀에 대한 보안 의무를 지지 않습니다.
-              따라서 제안하는 내용에 제안자의 영업 활동과 관련된 기밀 정보가
-              포함되지 않도록 주의해 주시기 바랍니다.<br /><br />
-              레이니스트는 제안 사항을 성실히 검토하여 사업성이 있다고 판단하는
-              경우, 제안자와 협의를 통해 제휴 계약 체결 등 별도의 사업 절차를
-              진행하게 됩니다. 다만, 제안자가 제안한 내용은 이미 레이니스트가
-              내부적으로 진행 중인 사업과 동일 또는 유사할 수 있으며, 제
-              3자로부터 먼저 제안 받은 내용일 수 있습니다. 따라서 레이니스트의
-              제안 사항에 대한 검토 진행이 제안자와의 제휴 사업 진행을 약속
-              드리는 것은 아니며, 제안 내용의 신규성 혹은 독창성이나 제안 내용에
-              대한 제안자의 우선권을 인정하는 것은 아님을 말씀 드립니다.<br /><br />
-              레이니스트와의 사업 제휴와 무관하거나 담당자와의 면담 또는 사업
-              진행을 전제로 한 제안일 경우 접수가 반려될 수 있음을 양해
-              바랍니다.
-            </p>
-          </div>
-          <div class="agreement-box">
-            <input id="checkbox-2" type="checkbox" name="agreeement" />
-            <label for="checkbox-2"
-              ><span class="checkbox"
-                >상기 유의사항을 확인하였으며, 이에 동의합니다.</span
-              ></label
-            >
-          </div>
-          <div class="agreement-box">
-            <input id="checkbox-3" type="checkbox" name="agreeement" />
-            <label for="checkbox-3"
-              ><span class="checkbox"
-                >등록하는 제안 내용에 제안자의 영업 기밀과 관련된 정보가
-                포함되지 않았음을 확인합니다.</span
-              ></label
-            >
-          </div>
-        </div>
-      </div>
-      <input type="submit" , value="제안 등록" />
+      </form>
     </main>
   </body>
 </html>
