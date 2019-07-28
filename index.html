@@ -126,15 +126,6 @@
       </div>
     </main>
     <script>
-      function showMenu() {
-        const btn = document.getElementById("mobile-menu");
-        if (btn.style.display === "block") {
-          btn.style.display = "none";
-        } else {
-          btn.style.display = "block";
-        }
-      }
-
       function openContent(evt, nthContent) {
         let i;
         let tabcontent;
@@ -152,7 +143,6 @@
             ""
           );
         }
-
         document.getElementById(nthContent).style.display = "block";
         evt.currentTarget.className += " title_selected";
       }

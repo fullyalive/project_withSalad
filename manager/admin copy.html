@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>제휴 안내</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__column">
+        <a class="logo" href="https://banksalad.com">
+          <img class="logo-icon" src="../img/logo.png" alt="뱅크샐러드" />
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="management__board-container">
+        <div class="management__board-column">
+          <div class="proposal__status-header">
+            <div
+              class="proposal__status title_selected"
+              onclick="openContent(event, 'Title1')"
+            >
+              미확인
+            </div>
+            <div
+              class="proposal__status"
+              onclick="openContent(event, 'Title2')"
+            >
+              검토중
+            </div>
+            <div
+              class="proposal__status"
+              onclick="openContent(event, 'Title3')"
+            >
+              검토완료
+            </div>
+          </div>
+          <div id="Title1" class="tabcontent content_selected">
+            <div class="proposal__list">
+              <div class="proposal__item">
+                <span class="proposal__title"
+                  >롯데카드제휴 추가 혜택 제휴논의 드립니다.</span
+                >
+                <span class="proposal__proposer">이재형</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title">신한카드 추가 혜택 안내</span>
+                <span class="proposal__proposer">김유미</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title"
+                  >롯데멤버스 제휴 제안드립니다.</span
+                >
+                <span class="proposal__proposer">이미성</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title">안녕하세요? 하나카드입니다.</span>
+                <span class="proposal__proposer">신유진</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title">New American Express Black</span>
+                <span class="proposal__proposer">Stephan Squeri</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title"
+                  >코스트코 결제카드 CRM 제휴제안드립니다.</span
+                >
+                <span class="proposal__proposer">강수지</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title">이마트 CRM 제휴제안건</span>
+                <span class="proposal__proposer">도겸</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title">쿠팡페이 CRM 제휴제안건</span>
+                <span class="proposal__proposer">이준범</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title"
+                  >국민은행 카드 발급수수료 모델 관련건</span
+                >
+                <span class="proposal__proposer">강동구</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title"
+                  >KEB 국민은행카드 수수료 조정안내</span
+                >
+                <span class="proposal__proposer">박동혁</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title">카드제휴 발급건</span>
+                <span class="proposal__proposer">이재형</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title">제휴 제안건 요청드립니다.</span>
+                <span class="proposal__proposer">하선규</span>
+              </div>
+              <div class="proposal__item">
+                <span class="proposal__title">제휴 제안건</span>
+                <span class="proposal__proposer">박인석</span>
+              </div>
+            </div>
+          </div>
+          <div id="Title2" class="tabcontent">
+            <div class="proposal__list">검토중</div>
+          </div>
+          <div id="Title3" class="tabcontent">
+            <div class="proposal__list">검토완료</div>
+          </div>
+        </div>
+        <div class="management__board-column">
+          <div class="management__status-header">
+            <img class="management__icon" src="../img/avatar.png" alt="" />
+            <img class="management__icon" src="../img/star_blank.png" alt="" />
+          </div>
+          <div class="management__proposal-list">
+            <div class="proposer__information">
+              <div class="proposer__information-column">
+                <span class="proposer__information-item">소속</span>
+                <span class="proposer__information-item">부서</span>
+                <span class="proposer__information-item">전화번호</span>
+                <span class="proposer__information-item">이메일주소</span>
+              </div>
+              <div class="proposer__information-column">
+                <span class="proposer__information-item">롯데카드</span>
+                <span class="proposer__information-item">BD</span>
+                <span class="proposer__information-item">010-1234-5678</span>
+                <span class="proposer__information-item"
+                  >jaehyung@lottecard.com</span
+                >
+              </div>
+            </div>
+            <div class="proposal__content-container">
+              <div class="proposal__content-row">
+                <span class="proposal__content-title"
+                  >제안목적 및 기대효과</span
+                >
+                <div class="proposal__content"></div>
+              </div>
+              <div class="proposal__content-row">
+                <span class="proposal__content-title">제안제목</span>
+                <div class="proposal__content"></div>
+              </div>
+              <div class="proposal__content-row">
+                <span class="proposal__content-title">제안내용</span>
+                <div class="proposal__content"></div>
+              </div>
+              <div class="proposal__content-row">
+                <span class="proposal__content-title">제안서</span>
+                <img
+                  class="management__icon"
+                  src="../img/paper-clip-outline.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="management__proposal-memo">
+            <span class="memo__content-title">메모</span>
+            <textarea class="memo__content"></textarea>
+          </div>
+          <div class="management__proposal-answer">
+            <span class="answer-button">거절</span
+            ><span class="answer-button">승인</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      function openContent(evt, nthContent) {
+        let i;
+        let tabcontent;
+        let tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("proposal__status");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            "title_selected",
+            ""
+          );
+        }
+        document.getElementById(nthContent).style.display = "block";
+        evt.currentTarget.className += " title_selected";
+      }
+    </script>
+  </body>
+</html>
