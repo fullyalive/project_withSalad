@@ -196,5 +196,7 @@
 }
 
 .proposal_selected {
-  display: block;
+  background-color: #09c584;
+  color: white;
+  font-weight: bold;
 }

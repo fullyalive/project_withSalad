@@ -119,3 +119,11 @@ input[type="submit"] {
   color: white;
   font-weight: bold;
 }
+
+.submit__button {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #09c584;
+  color: white;
+  font-weight: bold;
+}

@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="header__column">
-        <a class="logo" href="https://banksalad.com">
+        <a class="logo" href="../index.html">
           <img class="logo-icon" src="../img/logo.png" alt="뱅크샐러드" />
         </a>
       </div>
@@ -166,7 +166,7 @@
             <img class="management__icon" src="../img/avatar.png" alt="" />
             <img class="management__icon" src="../img/star_blank.png" alt="" />
           </div>
-          <div id="Proposal1" class="proposal__tab proposal_selected">
+          <div id="Proposal1" class="proposal__tab content_selected">
             <div class="management__proposal-list">
               <div class="proposer__information">
                 <div class="proposer__information-column">
@@ -783,12 +783,12 @@
         proposallinks = document.getElementsByClassName("proposal__item");
         for (j = 0; j < proposallinks.length; j++) {
           proposallinks[j].className = proposallinks[j].className.replace(
-            "title_selected",
+            "proposal_selected",
             ""
           );
         }
         document.getElementById(nthProposal).style.display = "block";
-        evt.currentTarget.className += " title_selected";
+        evt.currentTarget.className += " proposal_selected";
       }
     </script>
   </body>
