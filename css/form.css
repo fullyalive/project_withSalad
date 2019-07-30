@@ -123,6 +123,7 @@ input[type="submit"] {
 .submit__button {
   padding: 10px;
   border-radius: 3px;
+  margin-bottom: 30px;
   background-color: #09c584;
   color: white;
   font-weight: bold;

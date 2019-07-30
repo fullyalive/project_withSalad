@@ -89,6 +89,7 @@
   color: transparent;
   transition: color 0.2s;
 }
+
 input[type="checkbox"]:checked + label span.checkbox::after {
   color: #09c584;
 }
