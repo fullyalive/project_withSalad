@@ -1,8 +1,9 @@
+html {
+  height: 100%;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  min-height: 100%;
 }
 
 main {
@@ -11,4 +12,5 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-height: calc(100vh - 56px);
 }
