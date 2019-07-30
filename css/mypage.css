@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 420px;
+  min-height: 100vh;
 }
 
 .mypage_title {
@@ -44,7 +46,13 @@
   color: #09c584;
   font-weight: bold;
 }
-
+.proposal__result-image {
+  z-index: -1;
+  position: absolute;
+  top: -140px;
+  width: 245px;
+  height: 342px;
+}
 .proposal__result-information {
   display: flex;
   flex-direction: column;
@@ -65,10 +73,3 @@
   line-height: 20px;
 }
 
-.proposal__result-image {
-  z-index: -1;
-  position: absolute;
-  top: 170px;
-  width: 245px;
-  height: 342px;
-}
