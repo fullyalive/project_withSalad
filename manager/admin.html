@@ -16,6 +16,20 @@
       </div>
     </header>
     <main>
+      <div class="management__manager-container">
+        <div class="managemnet__manager-column">
+          <span style="margin-right: 10px">사업제휴>카드제휴</span>
+          <span>담당자 | 김뱅샐</span>
+        </div>
+        <div class="managemnet__manager-column">
+          <div class="manager__message-row">
+            검토대기 <span class="message_count">7</span>개
+          </div>
+          <div class="manager__message-row">
+            검토중 <span class="message_count">2</span>개
+          </div>
+        </div>
+      </div>
       <div class="management__board-container">
         <div class="management__board-column">
           <div class="proposal__status-header">
@@ -23,7 +37,7 @@
               class="proposal__status title_selected"
               onclick="openContent(event, 'Title1')"
             >
-              미확인
+              검토대기
             </div>
             <div
               class="proposal__status"
@@ -41,16 +55,7 @@
           <div id="Title1" class="tabcontent content_selected">
             <div class="proposal__list">
               <div
-                class="proposal__item"
-                onclick="openProposal(event, 'Proposal6')"
-              >
-                <span class="proposal__title"
-                  >코스트코 결제카드 CRM 제휴제안드립니다.</span
-                >
-                <span class="proposal__proposer">강수지</span>
-              </div>
-              <div
-                class="proposal__item"
+                class="proposal__item proposal_selected"
                 onclick="openProposal(event, 'Proposal7')"
               >
                 <span class="proposal__title">이마트 CRM 제휴제안건</span>
@@ -163,8 +168,18 @@
         </div>
         <div class="management__board-column">
           <div class="management__status-header">
-            <img class="management__icon" src="../img/avatar.png" alt="" />
-            <img class="management__icon" src="../img/star_blank.png" alt="" />
+              <img
+                class="management__icon"
+                src="../img/avatar.png"
+                alt=""
+                onclick="return alert('담당자 검색하는 View')"
+              /> 
+            <img
+              class="management__icon"
+              src="../img/star_blank.png"
+              alt=""
+              onclick="return alert('검토중인 제안으로 이동완료')"
+            />
           </div>
           <div id="Proposal1" class="proposal__tab content_selected">
             <div class="management__proposal-list">
@@ -191,10 +206,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -235,10 +247,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -256,6 +265,12 @@
           </div>
           <div id="Proposal3" class="proposal__tab">
             <div class="management__proposal-list">
+              <div class="proposal__status-read">
+                <span class="proposal__status-message1"
+                  >검토완료된 제안입니다.</span
+                >
+                <span class="proposal__status-message2">반려됨</span>
+              </div>
               <div class="proposer__information">
                 <div class="proposer__information-column">
                   <span class="proposer__information-item">소속</span>
@@ -279,10 +294,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -300,6 +312,12 @@
           </div>
           <div id="Proposal4" class="proposal__tab">
             <div class="management__proposal-list">
+              <div class="proposal__status-read">
+                <span class="proposal__status-message1"
+                  >검토완료된 제안입니다.</span
+                >
+                <span class="proposal__status-message2">승인됨</span>
+              </div>
               <div class="proposer__information">
                 <div class="proposer__information-column">
                   <span class="proposer__information-item">소속</span>
@@ -323,10 +341,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -344,6 +359,12 @@
           </div>
           <div id="Proposal5" class="proposal__tab">
             <div class="management__proposal-list">
+              <div class="proposal__status-read">
+                <span class="proposal__status-message1"
+                  >검토완료된 제안입니다.</span
+                >
+                <span class="proposal__status-message2">반려됨</span>
+              </div>
               <div class="proposer__information">
                 <div class="proposer__information-column">
                   <span class="proposer__information-item">소속</span>
@@ -369,10 +390,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -390,6 +408,12 @@
           </div>
           <div id="Proposal6" class="proposal__tab">
             <div class="management__proposal-list">
+              <div class="proposal__status-read">
+                <span class="proposal__status-message1"
+                  >검토완료된 제안입니다.</span
+                >
+                <span class="proposal__status-message2">승인됨</span>
+              </div>
               <div class="proposer__information">
                 <div class="proposer__information-column">
                   <span class="proposer__information-item">소속</span>
@@ -413,10 +437,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -432,7 +453,7 @@
               </div>
             </div>
           </div>
-          <div id="Proposal7" class="proposal__tab">
+          <div id="Proposal7" class="proposal__tab proposal__tab-selected">
             <div class="management__proposal-list">
               <div class="proposer__information">
                 <div class="proposer__information-column">
@@ -457,10 +478,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -501,10 +519,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -543,10 +558,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -587,10 +599,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -631,10 +640,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -675,10 +681,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -717,10 +720,7 @@
                   >
                   <div class="proposal__content"></div>
                 </div>
-                <div class="proposal__content-row">
-                  <span class="proposal__content-title">제안제목</span>
-                  <div class="proposal__content"></div>
-                </div>
+
                 <div class="proposal__content-row">
                   <span class="proposal__content-title">제안내용</span>
                   <div class="proposal__content"></div>
@@ -742,8 +742,18 @@
             <textarea class="memo__content"></textarea>
           </div>
           <div class="management__proposal-answer">
-            <span class="answer-button">거절</span
-            ><span class="answer-button">승인</span>
+            <input
+              class="answer-button"
+              type="submit"
+              value="거절"
+              onclick="return confirm('정말 거절하시겠습니까?')"
+            />
+            <input
+              class="answer-button"
+              type="submit"
+              value="승인"
+              onclick="return confirm('승인완료 처리하시겠습니까?')"
+            />
           </div>
         </div>
       </div>
