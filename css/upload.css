@@ -24,7 +24,11 @@
 
 .upload__box {
   width: 80%;
+  padding: 20px;
+  padding-top: 30px;
   margin-bottom: 60px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .notification {
@@ -96,7 +100,7 @@ input[type="checkbox"]:checked + label span.checkbox::after {
 
 .return__button {
   position: fixed;
-  bottom: 100px;
+  bottom: 80px;
   right: 200px;
   padding: 5px;
   border-radius: 50%;
