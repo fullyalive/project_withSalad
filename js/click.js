@@ -16,6 +16,24 @@ function openContent(evt, nthContent) {
   evt.currentTarget.className += " title_selected";
 }
 
+function openProposalCategory(evt, nthContent) {
+  let i;
+  let tabcontent;
+  let tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("proposal__status");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("title_selected", "");
+  }
+  document.getElementById(nthContent).style.display = "block";
+  evt.currentTarget.className += " title_selected";
+}
+
 function openProposal(evt, nthProposal) {
   let j;
   let proposal__tab;
