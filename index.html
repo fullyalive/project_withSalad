@@ -124,27 +124,6 @@
         </div>
       </div>
     </main>
-    <script>
-      function openContent(evt, nthContent) {
-        let i;
-        let tabcontent;
-        let tablinks;
-
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-
-        tablinks = document.getElementsByClassName("category__title");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(
-            "title_selected",
-            ""
-          );
-        }
-        document.getElementById(nthContent).style.display = "block";
-        evt.currentTarget.className += " title_selected";
-      }
-    </script>
+    <script src="js/click.js"></script>
   </body>
 </html>

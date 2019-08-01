@@ -1,6 +1,6 @@
 .management__manager-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 1030px;
   height: 100px;
@@ -12,7 +12,15 @@
 .managemnet__manager-column {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 500px;
+}
+
+.profile__avatar {
+  width: 10%;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+  margin-right: 15px;
 }
 
 .managemnet__manager-column:last-child {
@@ -112,6 +120,48 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
+.management__status-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search__container {
+  display: none;
+}
+
+.search__header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.search__body {
+  width: 100%;
+  height: 100px;
+  margin-top: 15px;
+  background-color: #efefef;
+}
+
+.close__button {
+  cursor: pointer;
+}
+
+.search_clicked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+}
 .management__icon {
   width: 20px;
   height: 20px;
@@ -256,4 +306,21 @@
 .proposal__status-message2 {
   font-size: 20px;
   font-weight: bold;
+}
+
+.approval__container {
+  display: none;
+}
+
+.approval_clicked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+  background-color: #efefef;
+}
+
+.removed {
+  display: none;
 }

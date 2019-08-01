@@ -120,6 +120,13 @@ input[type="submit"] {
   font-weight: bold;
 }
 
+input[type="search"] {
+  width: 90%;
+  border: none;
+  border: 1px solid #09c584;
+  padding: 5px;
+}
+
 .submit__button {
   padding: 10px;
   border-radius: 3px;
