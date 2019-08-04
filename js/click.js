@@ -65,13 +65,57 @@ function closeSearch() {
   searchContainer.classList.remove("search_clicked");
 }
 
-function openApproval() {
-  const answerContainer = document.querySelector(".management__proposal-answer");
-  answerContainer.classList.add("removed");
-  const approvalContainer = document.querySelector(".approval__container");
-  approvalContainer.classList.toggle("approval_clicked");
+function openAnswer() {
+  const answerContainer = document.querySelector(".answer__container");
+  answerContainer.classList.toggle("answer__container-clicked");
+  const blindScreen = document.querySelector(".blind__screen");
+  blindScreen.classList.add("screen-selected");
 }
 
-function closeApproval() {
+function openApproval() {
+  const answerContainer = document.querySelector(".approval__container");
+  answerContainer.classList.toggle("answer__container-clicked");
+  const blindScreen = document.querySelector(".blind__screen");
+  blindScreen.classList.add("screen-selected");
+}
 
+function openRejection() {
+  const answerContainer = document.querySelector(".rejection__container");
+  answerContainer.classList.toggle("answer__container-clicked");
+  const blindScreen = document.querySelector(".blind__screen");
+  blindScreen.classList.add("screen-selected");
+}
+
+function openOptions(evt, nthOption) {
+  let i;
+  let optioncontent;
+  let optionlinks;
+
+  optioncontent = document.getElementsByClassName("optioncontent");
+  for (i = 0; i < optioncontent.length; i++) {
+    optioncontent[i].style.display = "none";
+  }
+
+  optionlinks = document.getElementsByClassName("answer__option");
+  for (i = 0; i < optionlinks.length; i++) {
+    optionlinks[i].className = optionlinks[i].className.replace(
+      "answer__option-selected",
+      ""
+    );
+  }
+  document.getElementById(nthOption).style.display = "block";
+  evt.currentTarget.className += " answer__option-selected";
+}
+
+function approvalOptions() {}
+
+function rejectionOptions() {}
+
+function closeAnswer() {
+  const approvalContainer = document.querySelector(".approval__container");
+  approvalContainer.classList.remove("answer__container-clicked");
+  const rejectionContainer = document.querySelector(".rejection__container");
+  rejectionContainer.classList.remove("answer__container-clicked");
+  const blindScreen = document.querySelector(".blind__screen");
+  blindScreen.classList.remove("screen-selected");
 }
