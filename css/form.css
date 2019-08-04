@@ -78,6 +78,7 @@ input[type="file"]:focus + label {
 
 input[type="radio"] {
   margin-right: 10px;
+  cursor: pointer !important;
 }
 
 input[type="radio"]:after {
