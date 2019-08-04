@@ -27,11 +27,11 @@
         <div class="upload__container">
           <div class="upload__box">
             <h1 class="upload__introduction">제휴제안 업체정보</h1>
-            <div class="form-list">
+            <div class="form-box">
               <p class="text-title">업체구분</p>
               <div class="proposer__type">
                 <label for="기업">기업</label>
-                <input type="radio" name="type" value="기업" />
+                <input type="radio" name="type" value="기업" required />
                 <label for="개인">개인</label>
                 <input type="radio" name="type" value="개인" />
                 <label for="기타">기타</label>
@@ -45,6 +45,7 @@
                 type="text"
                 placeholder="회사/기관/단체 이름을 적어주세요."
                 name="content"
+                required
               />
             </div>
             <div class="form-box">
@@ -54,6 +55,7 @@
                 type="text"
                 placeholder="제안하시는 분의 성함을 적어주세요."
                 name="content"
+                required
               />
             </div>
             <div class="form-box">
@@ -63,6 +65,7 @@
                 type="text"
                 placeholder="담당부서와 직위를 적어주세요."
                 name="content"
+                required
               />
             </div>
             <div class="form-box">
@@ -72,6 +75,7 @@
                 type="text"
                 placeholder="제휴제안의 수정, 검토 현황을 확인하기 위해 필요한 이메일 주소를 적어주세요."
                 name="content"
+                required
               />
             </div>
             <div class="form-box">
@@ -81,6 +85,7 @@
                 type="text"
                 placeholder="함께 제안을 진행하기 위해 연락드릴 전화번호를 적어주세요."
                 name="content"
+                required
               />
             </div>
             <div class="form-list">
@@ -109,7 +114,12 @@
               </p>
             </div>
             <div class="agreement-box">
-              <input id="checkbox-1" type="checkbox" name="agreeement" />
+              <input
+                id="checkbox-1"
+                type="checkbox"
+                name="agreeement1"
+                required
+              />
               <label for="checkbox-1"
                 ><span class="checkbox"
                   >개인정보 수집 및 이용에 동의합니다.</span
@@ -126,6 +136,7 @@
                 type="text"
                 placeholder="제목을 적어주세요."
                 name="title"
+                required
               />
             </div>
             <div class="form-box">
@@ -133,6 +144,7 @@
               <textarea
                 class="form-textarea"
                 placeholder="제휴내용을 설명해주세요."
+                required
               ></textarea>
             </div>
             <div class="form-box">
@@ -140,11 +152,12 @@
               <textarea
                 class="form-textarea"
                 placeholder="제안의 목적과 실행시 기대효과를 적어주세요."
+                required
               ></textarea>
             </div>
             <div class="form-list">
               <p class="file-title">제안서 등록</p>
-              <input type="file" id="file" />
+              <input type="file" id="file" required />
               <label for="file">파일 선택</label>
             </div>
           </div>
@@ -175,7 +188,12 @@
               </p>
             </div>
             <div class="agreement-box">
-              <input id="checkbox-2" type="checkbox" name="agreeement" />
+              <input
+                id="checkbox-2"
+                type="checkbox"
+                name="agreeement2"
+                required
+              />
               <label for="checkbox-2"
                 ><span class="checkbox"
                   >상기 유의사항을 확인하였으며, 이에 동의합니다.</span
@@ -183,7 +201,12 @@
               >
             </div>
             <div class="agreement-box">
-              <input id="checkbox-3" type="checkbox" name="agreeement" />
+              <input
+                id="checkbox-3"
+                type="checkbox"
+                name="agreeement3"
+                required
+              />
               <label for="checkbox-3"
                 ><span class="checkbox"
                   >등록하는 제안 내용에 제안자의 영업 기밀과 관련된 정보가
