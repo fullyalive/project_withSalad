@@ -32,6 +32,34 @@ function openProposalCategory(evt, nthContent) {
   }
   document.getElementById(nthContent).style.display = "block";
   evt.currentTarget.className += " title_selected";
+
+  const answerContainer = document.querySelector(
+    ".management__proposal-answer"
+  );
+  answerContainer.classList.remove("removed");
+}
+
+function openProposalCategory2(evt, nthContent) {
+  let i;
+  let tabcontent;
+  let tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("proposal__status");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("title_selected", "");
+  }
+  document.getElementById(nthContent).style.display = "block";
+  evt.currentTarget.className += " title_selected";
+
+  const answerContainer = document.querySelector(
+    ".management__proposal-answer"
+  );
+  answerContainer.classList.add("removed");
 }
 
 function openProposal(evt, nthProposal) {
@@ -106,10 +134,6 @@ function openOptions(evt, nthOption) {
   document.getElementById(nthOption).style.display = "block";
   evt.currentTarget.className += " answer__option-selected";
 }
-
-function approvalOptions() {}
-
-function rejectionOptions() {}
 
 function closeAnswer() {
   const approvalContainer = document.querySelector(".approval__container");
