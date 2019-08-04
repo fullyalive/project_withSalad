@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1030px;
+  width: 1230px;
   height: 100px;
   border-radius: 3px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
@@ -43,13 +43,14 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
+  margin-top: 50px;
 }
 
 .management__board-column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 500px;
   height: 850px;
   border-radius: 3px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
@@ -60,7 +61,7 @@
 }
 
 .management__board-column:last-child {
-  width: 600px;
+  width: 700px;
 }
 .proposal__status-header {
   display: flex;
@@ -84,12 +85,13 @@
 .proposal__list {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 500px;
 }
 
 .proposal__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 5px 10px;
   padding-top: 15px;
@@ -98,6 +100,26 @@
   cursor: pointer;
 }
 
+.proposal__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proposal__result {
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.approved {
+  background-color: #109cd8;
+}
+
+.rejected {
+  background-color: #d9534f;
+}
 .proposal__item:last-child {
   border-bottom: none;
 }
@@ -107,6 +129,7 @@
   background-color: #09c584;
   font-weight: bold;
 }
+
 .management__status-header {
   display: flex;
   justify-content: space-between;
