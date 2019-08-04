@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>제휴 안내</title>
+  </head>
+  <body>
+    <header>
+      <div class="managemnet__manager-column">
+        <img class="profile__avatar" src="../img/tomato.png" alt="" />
+        <span style="margin-right: 10px">모든제안</span>
+        <span>담당자 | 뱅크샐러드</span>
+      </div>
+      <div class="managemnet__manager-column">
+        <div class="manager__message-row">
+          검토대기 <span class="message_count">19</span>개
+        </div>
+        <div class="manager__message-row">
+          검토중 <span class="message_count">10</span>개
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="management__board-container">
+        <div class="management__board-column">
+          <div class="proposal__status-header">
+            <div
+              class="proposal__status title_selected"
+              onclick="openProposalCategory(event, 'Title1')"
+            >
+              검토대기
+            </div>
+            <div
+              class="proposal__status"
+              onclick="openProposalCategory(event, 'Title2')"
+            >
+              검토중
+            </div>
+            <div
+              class="proposal__status"
+              onclick="openProposalCategory2(event, 'Title3')"
+            >
+              검토완료
+            </div>
+          </div>
+          <div id="Title1" class="tabcontent content_selected">
+            <div class="proposal__list">
+              <div
+                class="proposal__item proposal_selected"
+                onclick="openProposal(event, 'Proposal7')"
+              >
+                <span class="proposal__title">이마트 CRM 제휴제안건</span>
+                <span class="proposal__manager">카드 | 김뱅샐</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal8')"
+              >
+                <span class="proposal__title">쿠팡페이 CRM 제휴제안건</span>
+                <span class="proposal__manager">카드 | 김뱅샐</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal9')"
+              >
+                <span class="proposal__title"
+                  >신규 미디어 믹스 전략 제안드립니다.</span
+                >
+                <span class="proposal__manager">마케팅 | 어니언</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal10')"
+              >
+                <span class="proposal__title"
+                  >KEB 국민은행카드 수수료 조정안내</span
+                >
+                <span class="proposal__manager">P2P | 아보카도</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal11')"
+              >
+                <span class="proposal__title">카드 발급건</span>
+                <span class="proposal__manager">보험 | 토마토</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal12')"
+              >
+                <span class="proposal__title">제휴 제안건 요청드립니다.</span>
+                <span class="proposal__manager">기타사업 | 두부</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal13')"
+              >
+                <span class="proposal__title">어니스트펀드 부동산 제휴</span>
+                <span class="proposal__manager">P2P | 아보카도</span>
+              </div>
+              <!--  -->
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal8')"
+              >
+                <span class="proposal__title">부동산 P2P 신규제안 문의</span>
+                <span class="proposal__manager">P2P | 아보카도</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal9')"
+              >
+                <span class="proposal__title"
+                  >검색결과 키워드 광고 제안드립니다.</span
+                >
+                <span class="proposal__manager">마케팅 | 어니언</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal10')"
+              >
+                <span class="proposal__title"
+                  >한경 미디어 행사 연사 초청안내</span
+                >
+                <span class="proposal__manager">P2P | 아보카도</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal11')"
+              >
+                <span class="proposal__title"
+                  >레이니스트를 이끌어줄 새로운 인사교육프로그램 제안건</span
+                >
+                <span class="proposal__manager">마케팅 | 어니언</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal12')"
+              >
+                <span class="proposal__title">신규사업 제안</span>
+                <span class="proposal__manager">기타사업 | 두부</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal13')"
+              >
+                <span class="proposal__title">카뱅은 언제 들어오나요?</span>
+                <span class="proposal__manager">P2P | 아보카도</span>
+              </div>
+              <!--  -->
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal8')"
+              >
+                <span class="proposal__title">카카오페이 정식 제휴안내</span>
+                <span class="proposal__manager">카드 | 김뱅샐</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal9')"
+              >
+                <span class="proposal__title"
+                  >검색결과 키워드 광고 제안드립니다.</span
+                >
+                <span class="proposal__manager">마케팅 | 어니언</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal10')"
+              >
+                <span class="proposal__title"
+                  >신규 핀테크협회 회장 초청건 </span
+                >
+                <span class="proposal__manager">PR | 브로콜리</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal11')"
+              >
+                <span class="proposal__title"
+                  >콜로소 강사 제휴 안내</span
+                >
+                <span class="proposal__manager">PR | 브로콜리</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal12')"
+              >
+                <span class="proposal__title">신규사업 제안드립니다.</span>
+                <span class="proposal__manager">기타사업 | 두부</span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal13')"
+              >
+                <span class="proposal__title">신규비즈니스 제안</span>
+                <span class="proposal__manager">P2P | 아보카도</span>
+              </div>
+            </div>
+          </div>
+          <div id="Title2" class="tabcontent">
+            <div class="proposal__list">
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal1')"
+              >
+                <span class="proposal__title"
+                  >연세로 청춘스타트업 홍보부스 참가 안내</span
+                >
+                <span class="proposal__manager">PR | 브로콜리</span>
+              </div>
+            </div>
+            <div
+              class="proposal__item"
+              onclick="openProposal(event, 'Proposal12')"
+            >
+              <span class="proposal__title">신한카드 추가 혜택 안내</span>
+              <span class="proposal__manager">카드 | 김뱅샐</span>
+            </div>
+            <div class="proposal__list">
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal1')"
+              >
+                <span class="proposal__title"
+                  >페이스북 광고 대행사 픽셀 광고 제안드립니다.</span
+                >
+                <span class="proposal__manager">마케팅 | 어니언</span>
+              </div>
+            </div>
+            <div
+              class="proposal__item"
+              onclick="openProposal(event, 'Proposal12')"
+            >
+              <span class="proposal__title">쿠캣 | 오늘뭐먹지? 제안서 보내드립니다.</span>
+              <span class="proposal__manager">마케팅 | 어니언</span>
+            </div>
+            <div class="proposal__list">
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal1')"
+              >
+                <span class="proposal__title"
+                  >스카이스캐너 검색 항공권 x 뱅샐 제휴제안 드립니다.</span
+                >
+                <span class="proposal__manager">앱내마케팅 | 체리</span>
+              </div>
+            </div>
+            <div
+              class="proposal__item"
+              onclick="openProposal(event, 'Proposal12')"
+            >
+              <span class="proposal__title">아마존코리아 신규 런칭 쿠폰 CRM 제안드립니다.</span>
+              <span class="proposal__manager">카드 | 김뱅샐</span>
+            </div>
+            <div class="proposal__list">
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal1')"
+              >
+                <span class="proposal__title"
+                  >쿠팡이츠 신규 쿠폰 뱅셀 제휴제안 드립니다.</span
+                >
+                <span class="proposal__manager">앱내마케팅 | 체리</span>
+              </div>
+            </div>
+            <div
+              class="proposal__item"
+              onclick="openProposal(event, 'Proposal12')"
+            >
+              <span class="proposal__title">롯데면세점 VIP 회원 가입 제휴제안 드립니다.</span>
+              <span class="proposal__manager">앱내마케팅 | 체리</span>
+            </div>
+            <div class="proposal__list">
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal1')"
+              >
+                <span class="proposal__title"
+                  >롯데멤버스 x 뱅크샐러드 제안드립니다. </span
+                >
+                <span class="proposal__manager">마케팅 | 어니언</span>
+              </div>
+            </div>
+            <div
+              class="proposal__item"
+              onclick="openProposal(event, 'Proposal12')"
+            >
+              <span class="proposal__title">뱅샐과 새로운 카드를 만들고 싶습니다.</span>
+              <span class="proposal__manager">카드 | 김뱅샐</span>
+            </div>
+          </div>
+          <div id="Title3" class="tabcontent">
+            <div class="proposal__list">
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal3')"
+              >
+                <div class="proposal__column">
+                  <span class="proposal__result rejected">
+                    반려
+                  </span>
+                  <span class="proposal__title"
+                    >롯데멤버스 제휴 제안드립니다.</span
+                  >
+                </div>
+                <div class="proposal__column">
+                  <span class="proposal__manager">P2P | 아보카도</span>
+                </div>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal4')"
+              >
+                <div class="proposal__column">
+                  <span class="proposal__result approved">
+                    승인
+                  </span>
+                  <span class="proposal__title"
+                    >안녕하세요? 신한생명입니다.</span
+                  >
+                </div>
+                <span class="proposal__column">
+                  <span class="proposal__manager">보험 | 토마토</span>
+                </span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal5')"
+              >
+                <div class="proposal__column">
+                  <span class="proposal__result approved">
+                    승인
+                  </span>
+                  <span class="proposal__title"
+                    >New American Express Black with banksalad</span
+                  >
+                </div>
+                <span class="proposal__column">
+                  <span class="proposal__manager">P2P | 아보카도</span>
+                </span>
+              </div>
+              <div
+                class="proposal__item"
+                onclick="openProposal(event, 'Proposal6')"
+              >
+                <div class="proposal__column">
+                  <span class="proposal__result rejected">
+                    반려
+                  </span>
+                  <span class="proposal__title"
+                    >코스트코 결제카드 CRM 제휴제안드립니다.</span
+                  >
+                </div>
+                <div class="proposal__column">
+                  <span class="proposal__manager">카드 | 김뱅샐</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="management__board-column">
+          <div class="management__status-header">
+            <div
+              class="management__status-button"
+              onclick="openSearch(event, 'Search')"
+            >
+              <img class="management__icon" src="../img/avatar.png" alt="" />
+              담당자변경
+            </div>
+            <div
+              id="Search"
+              class="search__container"
+              placeholder="부서/이름 검색"
+            >
+              <div class="search__header">
+                <img
+                  class="close__button"
+                  src="../img/close.png"
+                  alt=""
+                  onclick="closeSearch(event,'Search')"
+                />
+              </div>
+              <input type="search" />
+              <div class="search__body"></div>
+            </div>
+            <img
+              class="management__icon"
+              src="../img/star_blank.png"
+              alt=""
+              onclick="return alert('검토중인 제안으로 이동완료')"
+            />
+          </div>
+          <div id="Proposal1" class="proposal__tab content_selected">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">롯데카드</span>
+                  <span class="proposer__information-item">BD</span>
+                  <span class="proposer__information-item">010-1234-5678</span>
+                  <span class="proposer__information-item"
+                    >jaehyung@lottecard.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal2" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">신한카드</span>
+                  <span class="proposer__information-item">사업제휴</span>
+                  <span class="proposer__information-item">010-1321-5128</span>
+                  <span class="proposer__information-item"
+                    >yumi@shinhancard.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal3" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposal__status-read">
+                <span class="proposal__status-message1"
+                  >검토완료된 제안입니다 |
+                </span>
+                <span class="proposal__status-message2">반려됨</span>
+              </div>
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">롯데멤버스</span>
+                  <span class="proposer__information-item">영업</span>
+                  <span class="proposer__information-item">010-7281-4218</span>
+                  <span class="proposer__information-item"
+                    >misung@lottememers.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal4" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposal__status-read">
+                <span class="proposal__status-message1"
+                  >검토완료된 제안입니다 |
+                </span>
+                <span class="proposal__status-message2">승인됨</span>
+              </div>
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">하나카드</span>
+                  <span class="proposer__information-item">카드사업부</span>
+                  <span class="proposer__information-item">010-3212-3989</span>
+                  <span class="proposer__information-item"
+                    >yujin@hanacard.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal5" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposal__status-read">
+                <span class="proposal__status-message1"
+                  >검토완료된 제안입니다 |
+                </span>
+                <span class="proposal__status-message2">승인됨</span>
+              </div>
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item"
+                    >AmericanExpress</span
+                  >
+                  <span class="proposer__information-item">Business</span>
+                  <span class="proposer__information-item">-</span>
+                  <span class="proposer__information-item"
+                    >ceo@americanexpress.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal6" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposal__status-read">
+                <span class="proposal__status-message1"
+                  >검토완료된 제안입니다 |
+                </span>
+                <span class="proposal__status-message2">반려됨</span>
+              </div>
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">코스트코</span>
+                  <span class="proposer__information-item">신사업기획부</span>
+                  <span class="proposer__information-item">010-9982-4398</span>
+                  <span class="proposer__information-item"
+                    >suji@costco.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal7" class="proposal__tab proposal__tab-selected">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">이마트</span>
+                  <span class="proposer__information-item">사업기획</span>
+                  <span class="proposer__information-item">010-8182-3321</span>
+                  <span class="proposer__information-item"
+                    >dokyum@emart.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal8" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">쿠팡</span>
+                  <span class="proposer__information-item">쿠팡페이</span>
+                  <span class="proposer__information-item">010-8221-2342</span>
+                  <span class="proposer__information-item"
+                    >joonbum@coupang.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal9" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">국민은행</span>
+                  <span class="proposer__information-item">기획전략</span>
+                  <span class="proposer__information-item">010-2310-8701</span>
+                  <span class="proposer__information-item">dongku@kb.com</span>
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal10" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">KEB</span>
+                  <span class="proposer__information-item">사업제휴</span>
+                  <span class="proposer__information-item">010-5221-1128</span>
+                  <span class="proposer__information-item"
+                    >donghyuk@keb.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal11" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">레이니스트</span>
+                  <span class="proposer__information-item">사업제휴</span>
+                  <span class="proposer__information-item">010-1232-5128</span>
+                  <span class="proposer__information-item"
+                    >jaehyung@rainist.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal12" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">개인</span>
+                  <span class="proposer__information-item">사업</span>
+                  <span class="proposer__information-item">010-5121-2128</span>
+                  <span class="proposer__information-item"
+                    >amugae@naver.com</span
+                  >
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Proposal13" class="proposal__tab">
+            <div class="management__proposal-list">
+              <div class="proposer__information">
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">소속</span>
+                  <span class="proposer__information-item">부서</span>
+                  <span class="proposer__information-item">전화번호</span>
+                  <span class="proposer__information-item">이메일주소</span>
+                </div>
+                <div class="proposer__information-column">
+                  <span class="proposer__information-item">개인</span>
+                  <span class="proposer__information-item">ceo</span>
+                  <span class="proposer__information-item">010-7721-3778</span>
+                  <span class="proposer__information-item">df2@naver.com</span>
+                </div>
+              </div>
+              <div class="proposal__content-container">
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title"
+                    >제안목적 및 기대효과</span
+                  >
+                  <div class="proposal__content"></div>
+                </div>
+
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안내용</span>
+                  <div class="proposal__content"></div>
+                </div>
+                <div class="proposal__content-row">
+                  <span class="proposal__content-title">제안서</span>
+                  <img
+                    class="management__icon"
+                    src="../img/paper-clip-outline.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="management__proposal-memo">
+            <span class="memo__content-title">메모</span>
+            <textarea class="memo__content" placeholder="담당자가 입력한 메모내용 표시"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="blind__screen" onclick="closeAnswer(event,'Approval')"></div>
+    </main>
+    <script src="../js/click.js"></script>
+  </body>
+</html>
